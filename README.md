@@ -1,3 +1,8 @@
+# Planned changes so I don't forget
+
+- generating into anything which (transitively) includes an interface panics.  that's kinda crazy, make that optional.
+- add a private-type-compatible fuzz-func registry so things like proto OneOf fields (the field type is a private interface) can be detected, and a valid value returned (e.g. a publicly-exposed enum).
+
 gofuzz
 ======
 
